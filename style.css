@@ -81,9 +81,76 @@ nav ul li a {
 #social-links li a:hover {
     opacity: 0.9;
 }
+/* Estilos para el header */
+header {
+    background-color: #2166e6b9;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.menu-toggle {
+    display: none; /* Oculta el botón de menú por defecto */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .menu-toggle {
+        display: block; /* Muestra el botón de menú en dispositivos móviles */
+    }
+
+    nav ul {
+        display: none; /* Oculta el menú por defecto en dispositivos móviles */
+        flex-direction: column;
+        background-color: #2166e6b9; /* Agrega un color de fondo al menú desplegable */
+        position: absolute;
+        top: 60px; /* Ajusta la posición del menú desplegable */
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
 /* Estilos del héroe */
 .hero {
+    height: 300px;
     text-align: center;
     padding: 100px 20px;
     background: url(/assets/BuenosAires_Header-1500x1000.jpg) center/cover no-repeat fixed;
