@@ -23,13 +23,18 @@ header {
 .logo img {
     width: 100px;
 }
-ul{
-    list-style-type: none
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
-    color: var(--dark-color)
+    color: var(--dark-color);
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -45,11 +50,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
 #social-links {
     display: flex;
     justify-content: center;
-    margin-top: 2rem; /* Reducir el espacio superior en dispositivos más pequeños */
-
+    margin-top: 2rem;
 }
 
 #social-links li {
@@ -60,17 +65,17 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Ancho del círculo */
-    height: 40px; /* Altura del círculo */
+    width: 40px;
+    height: 40px;
     background-color: var(--light-color);
     margin-right: 1rem;
-    border-radius: 50%; /* Hacer un círculo */
+    border-radius: 50%;
     transition: var(--transition);
 }
 
 #social-links li a i {
-    font-size: 30px; /* Tamaño del icono */
-    color: var(--dark-color); /* Color del icono */
+    font-size: 30px;
+    color: var(--dark-color);
 }
 
 #social-links li a:hover {
@@ -79,7 +84,6 @@ nav ul li a {
 
 /* Estilos del héroe */
 .hero {
-    height: 300px;
     text-align: center;
     padding: 100px 20px;
     background: url(/assets/BuenosAires_Header-1500x1000.jpg) center/cover no-repeat fixed;
@@ -97,8 +101,8 @@ nav ul li a {
 
 /* Estilos para la sección sobre nosotros */
 .about-section {
-    background-color: #1d1d1d; /* Fondo gris */
-    color: #ffffff; /* Texto oscuro */
+    background-color: #1d1d1d;
+    color: #ffffff;
     text-align: center;
     padding: 100px 0;
 }
@@ -114,62 +118,62 @@ nav ul li a {
 /* Estilos para la sección de fondo */
 .background-section {
     background: url(/assets/nuevolugar-1500x896.jpg) center/cover no-repeat fixed;
-    height: 400px; /* Ajusta la altura según sea necesario */
-    color: #ffffff; /* Texto oscuro */
+    color: #ffffff;
     text-align: center;
-    display: flex; /* Establece el contenedor como flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-direction: column; /* Alinea los elementos en columna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 20px;
 }
 
 .background-section h1 {
-    font-size: 36px; /* Ajusta el tamaño de fuente según sea necesario */
-    margin-bottom: 20px; /* Agrega espacio entre los elementos */
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.background-section h3, .background-section h5 {
-    font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
-    margin: 10px 0; /* Agrega espacio entre los elementos */
+.background-section h3,
+.background-section p {
+    font-size: 24px;
+    margin: 10px 0;
 }
-
 
 /* Estilos de la sección */
 .section {
     padding: 50px 20px;
-    text-align: center; /* Centra el texto dentro de la sección */
+    text-align: center;
 }
 
 /* Estilos para el título de la sección */
 .section h1 {
     color: #9e9a9a;
-    margin-bottom: 20px; /* Agrega espacio entre el título y los elementos de la galería */
+    margin-bottom: 20px;
 }
 
 /* Estilos para los elementos de la galería */
 .gallery-item {
-    display: inline-block; /* Muestra los elementos en línea */
-    width: calc(33.33% - 20px); /* Calcula el ancho de cada elemento (33.33% - 20px de espacio entre elementos) */
-    margin: 0 10px; /* Agrega espacio entre los elementos */
-    vertical-align: top; /* Alinea los elementos en la parte superior */
-    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho y la altura */
-    text-align: center; /* Centra el contenido dentro del elemento */
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /* Estilos para las imágenes dentro de la galería */
 .gallery-item img {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border: 1px solid #ddd; /* Añade un borde a las imágenes */
-    border-radius: 5px; /* Añade bordes redondeados */
-    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 /* Estilos para los títulos de los elementos de la galería */
 .gallery-item h2 {
     color: #5e5c5c;
-    margin: 0; /* Elimina el margen predeterminado del título */
-    font-size: 18px; /* Tamaño de fuente del título */
+    margin: 0;
+    font-size: 18px;
 }
 
 /* Estilos para la sección de pastores */
@@ -181,28 +185,26 @@ nav ul li a {
 
 /* Estilos para la imagen del pastor */
 .round-image {
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    width: 150px; /* Tamaño de la imagen */
+    border-radius: 50%;
+    width: 150px;
     height: 150px;
-    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
-    
+    margin-bottom: 20px;
 }
 
 /* Estilos para el texto */
 .pastor-info h1 {
     color: #5e5c5c;
-    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+    margin-bottom: 20px;
 }
 
 .pastor-info p {
-    font-size: 18px; /* Tamaño de fuente del párrafo */
-    line-height: 1.5; /* Espaciado entre líneas */
+    font-size: 18px;
+    line-height: 1.5;
 }
-
 
 /* Estilos del pie de página */
 footer {
-    background-color:  #2166e6b9;
+    background-color: #2166e6b9;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -212,4 +214,43 @@ footer {
 .brand-name {
     font-size: 24px;
     margin-left: 10px;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 50px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .about-section {
+        padding: 50px 20px;
+    }
+    
+    .background-section {
+        padding: 50px 20px;
+    }
+    
+    .section {
+        padding: 30px 20px;
+    }
+    
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+    
+    .gallery-item h2 {
+        font-size: 16px;
+    }
+    
+    .seccion-pastores {
+        padding: 30px 20px;
+    }
 }
