@@ -1,92 +1,112 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/418601413_1462719404458076_3756283850337752814_n.jpg" type="image/x-icon">
     <title>Nueva Generacion</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/418601413_1462719404458076_3756283850337752814_n.jpg" alt="Zara">
-            <span class="brand-name">Nueva Generacion</span>
-        </div>
-        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Reuniones</a></li>
-                <li><a href="#nosotros">Vivi</a></li>
-                <li><a href="#contacto">Pastores</a></li>
-            </ul>
+          <ul class="nav__links">
+            <li class="link logo">NUEVA <br/> GENERACION</li>
+            <li class="link">INICIO</li>
+            <li class="link">REUNIONES</li>
+            <li class="link">VIVI</li>
+            <li class="link">PASTORES</li>
+          </ul>
+          <div class="social__icons">
+            <span><i class="ri-youtube-fill"><a href="" ></a></i></span>
+            <span><i class="ri-instagram-line"><a href="" ></a></i></span>
+          </div>
+          
+        <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
         </nav>
-    </header>
+        <div class="section_container header__container">
+          <div class="header__content">
+            <h1>NUEVA<br />GENERACION</h1>
+            <p>Bienvenido a casa</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="about__container" id="about">
+            <div class="section__header">¡Queremos verte!, Vení tal como sos</div>
+            <p class="section__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptatem soluta nulla alias in perferendis eveniet reiciendis nemo atque est aut consequuntur dolorem impedit perspiciatis sequi, nisi quod! Vitae, distinctio!
+            </p>
+          </section>
+      
+          <section class="feature" id="feature">
+            <div class="section__container feature__container">
+                <h4>Una Iglesia para toda la familia.</h4>
+                <h3>Horarios de la reunión:</h3>
+                <p>Domingo a las 19 hs.<br>Jueves a las 20 hs.<br>Remedios Escalada deSan Martín 965</p>
+            </div>
+          </section>
 
-    <section id="inicio" class="hero">
-        <h1>Ministerio Nueva Generacion</h1>
-        <p>Bienvenido a casa</p>
-        <ul id = "social-links">
-                    <li>
-                        <a href = "https://www.instagram.com/mnuevageneracion/" target="_blank" >
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "https://www.youtube.com/@MNuevaGeneracion" target="_blank" >
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-    </section>
+          <section class="feature" id="feature">
+            <div class="section__container feature__container"></div>
+          </section>
+          <section class="section__container explore__container">
+            <div class="explore__header">
+              <h2 class="section__header">Vivi la Iglesia</h2>
+            </div>
+            <div class="explore__grid">
+              <div class="explore__card">
+                <img src="assets/images.jpeg" alt="Imagen 1">
+                <h4>Evangelizmo</h4>
+                <p>
+                  Embrace the essence of strength as we delve into its various
+                  dimensions physical, mental, and emotional.
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="explore__card">
+                <img src="assets/images.jpeg" alt="Imagen 1">
+                <h4>Celulas</h4>
+                <p>
+                  It encompasses a range of activities that improve health, strength,
+                  flexibility, and overall well-being.
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+              </div>
+              <div class="explore__card">
+                <img src="assets/images.jpeg" alt="Imagen 1">
+                <h4>Voluntarios</h4>
+                <p>
+                  Through a combination of workout routines and expert guidance, we'll
+                  empower you to reach your goals.
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+          </section>
 
-    <section id="" class="about-section">
-        <div class="about-section">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatem deserunt laudantium accusamus autem,<br> optio dolore ipsam dicta numquam molestiae eligendi rerum voluptatum ea dolor modi doloribus? Ratione, beatae quis.</p>
-            <h1>¡Queremos verte!, Vení tal como sos</h1>
-        </div>
-    </section>
-
-    <section id="background" class="background-section">
-        <h1>Una Iglesia para toda la familia.</h1>
-        <h3>Horarios de la reunión:</h3>
-        <p>Domingo a las 19 hs.<br>Jueves a las 20 hs.<br>Remedios Escalada deSan Martín 965</p>
-    </section>
-
-    <section id="gallery" class="section">
-        <h1>vivi la Iglesia</h1>
-        <div class="gallery-item">
-            <img src="assets/images.jpeg" alt="Imagen 1">
-            <h2>comedor</h2>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images.jpeg" alt="Imagen 2">
-            <h2>evangelizmo</h2>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images.jpeg" alt="Imagen 3">
-            <h2>voluntariado</h2>
-        </div>
-        <div class="gallery-item">
-            <img src="assets/images.jpeg" alt="Imagen 3">
-            <h2>celulas</h2>
-        </div>
-    </section>
-    
-    <section id="pastores" class="seccion-pastores">
-        <div class="pastor-info">
-            <h1>Nuestros pastores</h1>
-            <img src="assets/images (1).jpeg" alt="Pastor" class="round-image">
-            <p>Leo & Vero</p>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 NuevaGeneracion. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
+          <section id="pastores" class="seccion-pastores">
+            <div class="pastor-info">
+                <h1>Nuestros pastores</h1>
+                <img src="assets/images (1).jpeg" alt="Pastor" class="round-image">
+                <p>Leo & Vero</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 NuevaGeneracion. Todos los derechos reservados.</p>
+        </footer>
+      </main>
+      <script src="main.js"></script>
 </body>
 </html>

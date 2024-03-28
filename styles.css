@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #2564ebad;
+  --primary-color-dark: #1e40af;
+  --text-dark: #1f1f1f;
+  --text-light: #4b5563;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+  overflow: hidden;
+}
+
+.section__header {
+  position: relative;
+  isolation: isolate;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  padding-inline: 1rem;
+  font-size: 2rem;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: url("assets/BuenosAires_Header-1500x1000.jpg") center/cover no-repeat fixed;
+  background-position: center center;
+}
+
+.nav__menu__btn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+nav {
+  padding: 1rem 5rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  color: var(--white);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link.logo {
+  font-weight: 600;
+}
+
+.social__icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social__icons span {
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link:hover,
+.social__icons span:hover {
+  color: var(--primary-color);
+}
+
+.header__container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: calc(700px - 60px);
+}
+
+.header__content {
+  text-align: center;
+  color: var(--white);
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+
+.header__content h1 {
+  font-size: 10rem;
+  line-height: 8rem;
+}
+
+.header__content p {
+  letter-spacing: 2px;
+}
+
+@media (width < 1200px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .header__content h1 {
+    font-size: 8rem;
+    line-height: 6.5rem;
+  }
+}
+
+@media (width < 900px) {
+  .nav__actions {
+    display: none;
+  }
+  .link:not(.logo) {
+    display: none;
+  }
+  .header__content h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (width < 600px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    z-index: 99;
+  }
+
+  .nav__links {
+    position: absolute;
+    left: 0;
+    top: 68px;
+    padding: 2rem;
+    width: 100%;
+    flex-direction: column;
+    transform: scaleY(0);
+    transform-origin: top;
+    background-color: var(--primary-color);
+  }
+
+  .nav__links .link a {
+    opacity: 0;
+  }
+
+  .nav__links.open .link a {
+    opacity: 1;
+  }
+
+  .nav__links.open {
+    transform: scaleY(1);
+  }
+
+  .nav__menu__btn {
+    display: block;
+  }
+  .header__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header__container h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+/* Estilos de la sección About Us */
+#about {
+  background-color: #272727; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 5rem 0; /* Ajuste del padding */
+}
+#about div{
+  color: #f3ebe6;
+}
+.about__container .section__description {
+  max-width: 900px;
+  margin: 0 auto; /* Centrar el contenido */
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilos de la sección About Us */
+#about2 {
+  background-color: #fdfdfd; /* Fondo negro */
+  color: #0e0d0d; /* Texto blanco */
+  padding: 5rem 0; /* Ajuste del padding */
+}
+#about2 div{
+  color: #131313;
+}
+
+.feature__container {
+  text-align: center;
+  color: white;
+}
+
+.feature__container h3, .feature__container p {
+  color: white;
+  text-align: center;
+}
+
+.feature {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("assets/nuevolugar-1500x896.jpg") center/cover no-repeat fixed;
+    background-position: center center;
+  z-index: -1;
+}
+
+.feature__container h4 {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  color: #f3ebe6;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.feature__container .section__header {
+  color: var(--white);
+  background-color: transparent;
+}
+
+.feature__grid {
+  isolation: isolate;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.feature__content {
+  display: grid;
+  align-items: center;
+}
+
+.feature__content > div {
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.feature__content .btn {
+  margin-top: 1rem;
+}
+
+.feature__video video {
+  width: 100%;
+}
+
+
+/* Estilos para la sección explore */
+.explore__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.explore__nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.explore__nav span {
+  padding: 0 6px;
+  font-size: 1.5rem;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore__nav span:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.explore__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.explore__card {
+  padding: 1rem;
+  background-color: var(--primary-color-light);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.explore__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.explore__card span {
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: var(--white);
+  background-color: var(--secondary-color-dark);
+  border-radius: 5px;
+}
+
+.explore__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.explore__card p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.explore__card a {
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.explore__card a:hover {
+  color: var(--secondary-color);
+}
+
+.class__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+@media (max-width: 900px) {
+  .explore__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .class__container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 1rem; /* Añadir un poco de espacio a los lados en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 600px) {
+  .explore__header {
+    flex-direction: column;
+  }
+
+  .explore__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Estilos para la sección de pastores */
+.seccion-pastores {
+  background-color: #cfcccc;
+  padding: 50px 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Estilos para la imagen del pastor */
+.round-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto; /* Centrar la imagen horizontalmente */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el texto */
+.pastor-info h1 {
+  color: #5e5c5c;
+  margin-bottom: 20px;
+}
+
+.pastor-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #1e40af;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
