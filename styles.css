@@ -147,8 +147,8 @@ nav {
     display: none;
   }
   .header__content h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
 }
 
@@ -193,8 +193,8 @@ nav {
   }
 
   .header__container h1 {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 /* Estilos de la sección About Us */
